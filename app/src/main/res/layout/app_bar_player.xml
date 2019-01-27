@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:id="@+id/background"
+    android:background="@drawable/playerbackground"
+    android:layout_height="match_parent"
+    tools:context=".Player">
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_margin="10dp"
+            android:layout_weight="0.19"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="15dp"
+            app:cardBackgroundColor="#595959"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#252424"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/bookimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mediaplayer"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageButton
+                android:id="@+id/rewind"
+                android:layout_marginRight="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rewind" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/play_pause"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:fabCustomSize="60dp"
+                android:backgroundTint="@color/colorAccent"
+                android:src="@drawable/play_media"
+                />
+            <ImageButton
+                android:id="@+id/forward"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/forward"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/currentseektime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textColor="#353434"
+                android:textStyle="bold"
+                android:text="12:45:23"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:elevation="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/home"
+            android:layout_gravity="bottom|center"/>
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="  "
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#292424"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_player" />
+
+
+</android.support.design.widget.CoordinatorLayout>

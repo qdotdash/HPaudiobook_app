@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/playerbackground6"
+    android:layout_height="match_parent"
+    tools:context=".seekvaluesetter">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:checkedButton="@id/radiobutton2"
+        android:layout_height="match_parent" >
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton1"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  10 seconds"
+            android:textSize="17dp"
+            />
+
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton2"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  20 seconds"
+            android:textSize="17dp"
+            />
+
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton3"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  30 seconds"
+            android:textSize="17dp"
+            />
+
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton4"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  1 minute"
+            android:textSize="17dp"
+            />
+
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton5"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  2 minutes"
+            android:textSize="17dp"
+            />
+
+        <RadioButton
+            android:layout_weight="0.5"
+            android:id="@+id/radiobutton6"
+            android:layout_margin="10dp"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  5 minutes"
+            android:textSize="17dp"
+            />
+
+    </RadioGroup>
+</LinearLayout>

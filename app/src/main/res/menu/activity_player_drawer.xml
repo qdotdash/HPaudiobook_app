@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/seekrate"
+            android:title="Seek rate" />
+        <item
+            android:id="@+id/playbackspeed"
+            android:title="Play back speed" />
+        <item
+            android:id="@+id/seekbarhide"
+            android:title="Seek bar Visibility" />
+        <item
+            android:id="@+id/emergency"
+            android:title="Emergency" />
+    </group>
+
+</menu>

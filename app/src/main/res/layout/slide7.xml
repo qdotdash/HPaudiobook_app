@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book7"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.iitr.kaishu.nsidedprogressbar.NSidedProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:nsidedProg_baseSpeed="5"
+        app:nsidedProg_primaryColor="#c6c6c6"
+        app:nsidedProg_secondaryColor="#dc8204"
+        app:nsidedProg_sideCount="3"
+        app:nsidedProg_clockwise="true"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab7"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/not_ready_play"
+        />
+
+</RelativeLayout>

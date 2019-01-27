@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#decfcf</color>
+    <color name="forward_rewind">#1e1e1e</color>
+    <color name="seek_settings">#262626</color>
+    <color name="dividersettings">#4e4d4d</color>
+</resources>
