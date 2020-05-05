@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/book1"
     android:padding="30dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.hpaud.qdotdash.hpaudiobook.Fragment_book1">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.iitr.kaishu.nsidedprogressbar.NSidedProgressBar
         android:id="@+id/progressbar"
@@ -14,8 +13,8 @@
         android:layout_height="100dp"
         android:layout_centerInParent="true"
         app:nsidedProg_baseSpeed="5"
-        app:nsidedProg_primaryColor="#c6c6c6"
-        app:nsidedProg_secondaryColor="#dc8204"
+        app:nsidedProg_primaryColor="@color/colorAccent"
+        app:nsidedProg_secondaryColor="@color/loading_color"
         app:nsidedProg_sideCount="3"
         app:nsidedProg_clockwise="true"
         />

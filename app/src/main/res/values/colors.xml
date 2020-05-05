@@ -6,4 +6,5 @@
     <color name="forward_rewind">#1e1e1e</color>
     <color name="seek_settings">#262626</color>
     <color name="dividersettings">#4e4d4d</color>
+    <color name="loading_color">#3F51B5</color>
 </resources>

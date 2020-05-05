@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.hpaud.qdotdash.hpaudiobook">
+    package="com.hp.qdotdash.hpaudiobook">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".Player"
+            android:name="com.hp.qdotdash.hpaudiobook.Player"
             android:configChanges="orientation"
             android:label="@string/title_activity_player"
             android:launchMode="singleTask"
@@ -23,28 +23,28 @@
 
         </activity>
         <activity
-            android:name=".seekvaluesetter"
+            android:name="com.hp.qdotdash.hpaudiobook.seekvaluesetter"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Home"
+            android:name="com.hp.qdotdash.hpaudiobook.Home"
             android:configChanges="orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
 
         </activity>
 
-        <service android:name=".PlayerService" />
+        <service android:name="com.hp.qdotdash.hpaudiobook.PlayerService" />
 
-        <activity android:name=".Emergency" />
-        <activity android:name=".Welcomescreen">
+        <activity android:name="com.hp.qdotdash.hpaudiobook.Emergency" />
+        <activity android:name="com.hp.qdotdash.hpaudiobook.Welcomescreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".playbackrate" />
+        <activity android:name="com.hp.qdotdash.hpaudiobook.playbackrate" />
     </application>
 
 </manifest>
