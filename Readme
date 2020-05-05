@@ -1,0 +1,4 @@
+HPaudiobook is an android app that streams the 7 Harry Potter audiobooks narrated by Stephen Fry. These books are uploaded on firebase
+storage and they are streamed using the generated links. The Async task downloads and the media player streams the media in the background.
+
+LINK TO PLAYSTORE : https://play.google.com/store/apps/details?id=com.hp.qdotdash.hpaudiobook
